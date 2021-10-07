@@ -1,0 +1,276 @@
+@import "./global.css";
+
+.header {
+	padding: 15px 0;
+	background: #2b2b2b;
+}
+
+.header .center {
+	max-width: 1440px;
+	display: flex;
+  align-content: center;
+  justify-content: space-between;
+	align-items: center;
+}
+
+.header .header__logo {
+	color: #f5f5f5;
+	font-size: 28px;
+	font-weight: 400;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.header .header__menu .header__menu-item {
+	display: inline-block;
+	font-size: 18px;
+}
+
+.header .header__menu.header__menu-desktop {
+	display: block;
+}
+
+.header .mobile__menu-button {
+	display: none;
+	font-size: 30px;
+	color: #f5f5f5;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.header .header__menu .header__menu-item .item--link {
+	color: #f5f5f5;
+	text-decoration: none;
+	transition: .15s;
+	padding: 22px 20px;
+}
+
+.header .header__menu .header__menu-item .item--link:hover {
+	background: #3b3b3b;
+}
+
+.mobile__menu {
+	display: none;
+}
+
+.mobile__menu ul {
+	display: none;
+}
+
+.banner {
+	width: 100%;
+	height: 650px;
+	background-color: #0b0b0b;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.banner .banner__text {
+	width: 90%;
+	max-width: 550px;
+	padding: 10px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -40%);
+}
+
+.banner .banner__text .banner__title {
+	color: #f5f5f5;
+	font-size: 32px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.banner .banner__text .banner__paragraph {
+	color: #f5f5f5;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: justify;
+	margin: 10px 0;
+}
+
+.main {
+	padding: 20px;
+}
+
+.main .w50:first-child {
+	padding: 80px 50px;
+}
+
+.main .w50 .main__title {
+	font-size: 32px;
+	font-weight: 400;
+	color: #2b2b2b;
+	margin-bottom: 15px;
+}
+
+.main .w50 .main__paragraph {
+	font-size: 18px;
+	font-weight: 400;
+	color: #2b2b2b;
+	margin: 10px 0;
+	text-align: justify;
+}
+
+.main .w50 .main__image {
+	width: 100%;
+	height: 100%;
+	max-width: 450px;
+	max-height: 450px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.services {
+	padding: 30px 0;
+	background-color: #c4c4c4;
+}
+
+.services .services__title {
+	font-size: 32px;
+	font-weight: 400;
+	color: #2b2b2b;
+	text-align: center;
+}
+
+.services .services__items {
+	display: flex;
+}
+
+.services .services__items-single {
+	display: block;
+	margin: 30px 50px;
+}
+
+.services .services__items-single .icon {
+	display: block;
+}
+
+.services .services__items-single .fi-rr-star {
+	font-size: 48px;
+	font-weight: 400;
+	color: #2b2b2b;
+	display: block;
+	text-align: center;
+}
+
+.services .services__items-single .services__items-single--title {
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.services .services__items-single .services__items-single--text {
+	font-size: 18px;
+	font-weight: 400;
+	text-align: justify;
+	color: #2b2b2b;
+}
+
+.testimonials {
+	padding: 30px 0;
+}
+
+.testimonials .testimonials__title {
+	font-size: 32px;
+	font-weight: 400;
+	color: #2b2b2b;
+}
+
+.testimonials .testimonial__single {
+	padding: 30px;
+}
+
+.testimonials .testimonial__single .testimonial__customer-name {
+	font-size: 24px;
+	font-weight: 400;
+	color: #2b2b2b;
+	margin: 10px 0;
+}
+
+.testimonials .testimonial__single .testimonial__customer-text {
+	font-size: 18px;
+	font-weight: 400;
+	color: #2b2b2b;
+	text-align: justify;
+}
+
+.footer {
+	padding: 20px 0;
+	background-color: #2b2b2b;
+}
+
+.footer p {
+	font-size: 18px;
+	color: #f5f5f5;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+	.main .w50 {
+		width: 100%;
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.services .services__items {
+		display: block;
+	}	
+
+	.services .services__items-single {
+		display: block;
+		margin: 30px auto;
+		padding: 0;
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	.testimonials .testimonial__single.w50.left {
+		width: 100%;
+		font: none;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.header .header__menu.header__menu-desktop {
+		display: none;
+	}
+
+	.header .mobile__menu-button {
+		display: block;
+	}
+
+	.mobile__menu {
+		padding: 10px;
+		background: #1b1b1b;
+	}
+
+	.mobile__menu ul {
+		display: block;
+		list-style: none;
+	}
+
+	.mobile__menu li {
+		text-align: center;
+		padding: 15px 0;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.mobile__menu li:not(:last-child) {
+		border-bottom: 1px solid #f5f5f5;
+	}
+
+	.mobile__menu li a {
+		font-size: 18px;
+		color: #f5f5f5;
+		text-decoration: none;
+		display: block
+	}
+}
